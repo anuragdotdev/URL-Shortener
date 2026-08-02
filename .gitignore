@@ -1,0 +1,153 @@
+# ---------------------------------------------------
+# Dependencies
+# ---------------------------------------------------
+node_modules/
+
+# pnpm
+.pnpm-store/
+
+# npm
+.npm/
+
+# yarn
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Bun
+.bun/
+
+# ---------------------------------------------------
+# Build Output
+# ---------------------------------------------------
+dist/
+build/
+out/
+coverage/
+.tmp/
+temp/
+.cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# ---------------------------------------------------
+# Environment Variables & Secrets
+# ---------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# Secrets
+*.pem
+*.key
+*.crt
+*.p12
+
+# ---------------------------------------------------
+# Logs
+# ---------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---------------------------------------------------
+# Runtime Files
+# ---------------------------------------------------
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ---------------------------------------------------
+# Testing
+# ---------------------------------------------------
+coverage/
+.nyc_output/
+
+# Playwright
+playwright-report/
+test-results/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# ---------------------------------------------------
+# Database / ORM
+# ---------------------------------------------------
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# Prisma
+prisma/dev.db
+prisma/dev.db-journal
+
+# TypeORM
+typeorm.log
+
+# ---------------------------------------------------
+# Docker
+# ---------------------------------------------------
+.docker/
+
+# Docker override files
+docker-compose.override.yml
+
+# ---------------------------------------------------
+# IDE / Editor
+# ---------------------------------------------------
+
+# VSCode
+.vscode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains
+.idea/
+
+# Vim
+*.swp
+*.swo
+
+# ---------------------------------------------------
+# OS Files
+# ---------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------
+# Monorepo / Turbo / Nx
+# ---------------------------------------------------
+.turbo/
+nx-cache/
+
+# ---------------------------------------------------
+# Misc
+# ---------------------------------------------------
+*.tgz
+
+# Generated docs
+docs/generated/
+
+# Local config
+.local/
+
+# ---------------------------------------------------
+# Optional: Ignore uploads
+# Uncomment if your app stores uploads locally
+# ---------------------------------------------------
+# uploads/
+# public/uploads/
