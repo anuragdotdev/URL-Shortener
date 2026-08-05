@@ -1,3 +1,5 @@
+import { BadRequestError } from "../errors/BadRequestError.js";
+import { NotFoundError } from "../errors/NotFoundError.js";
 import { UrlRepository } from "../repositories/url.repository.js";
 import { generateShortCode } from "../utils/generateShortCode.js";
 import { isValidUrl } from "../utils/isValidUrl.js";
@@ -8,7 +10,7 @@ export class UrlService{
     async shortenUrl(originalUrl: string){
 
         if(!isValidUrl(originalUrl)){
-            throw new Error("Invalid url")
+            throw new BadRequestError("Invalid Url")
         }
 
         const existing = await this.repository.findByOriginalUrl(originalUrl)
@@ -38,7 +40,7 @@ export class UrlService{
         const url = await this.repository.findByShortCode(shortCode)
 
         if(!url){
-            throw new Error("Short URL not found")
+            throw new NotFoundError("Short URL not found")
         }
 
         return url.originalUrl
