@@ -3,6 +3,7 @@ import cors from "cors"
 import swaggerUi from "swagger-ui-express"
 import { swaggerSpec } from "./config/swagger.js"
 import healthRouter from "./routes/health.router.js"
+import UrlRouter from "./routes/url.router.js"
 
 const app = express()
 
@@ -17,5 +18,6 @@ app.use(
 )
 
 app.use('/api/v1',healthRouter)
+app.use('/api/v1',UrlRouter)
 
 export default app
